@@ -1,0 +1,171 @@
+name: Nieuwe functionaliteit
+description: Gebruik deze template voor het ontwikkelen van een nieuwe feature.
+title: "[Feature]: "
+labels: ["type-feature", "status-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gebruik deze template om een nieuwe functionaliteit duidelijk te beschrijven.
+        De issue moet genoeg informatie bevatten zodat een developer ermee aan de slag kan.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Korte omschrijving
+      description: Beschrijf in één zin welke functionaliteit ontwikkeld moet worden.
+      placeholder: Bijvoorbeeld: Gebruikers kunnen inloggen met Microsoft Entra ID
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Omschrijving
+      description: Beschrijf wat de functionaliteit moet doen en waarom deze nodig is.
+      placeholder: |
+        Wat moet er worden gebouwd?
+        Waarom is deze functionaliteit nodig?
+        Voor welke gebruiker of situatie is dit bedoeld?
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Functionele eisen
+      description: Beschrijf wat de functionaliteit minimaal moet kunnen.
+      placeholder: |
+        - De gebruiker kan ...
+        - Het systeem toont ...
+        - Het systeem controleert ...
+        - Het systeem slaat ... op
+    validations:
+      required: true
+
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Randvoorwaarden
+      description: Welke voorwaarden of afhankelijkheden zijn belangrijk?
+      placeholder: |
+        Denk aan:
+        - Benodigde rechten of toegang
+        - Afhankelijkheden van andere issues
+        - Beschikbare API's, designs of documentatie
+        - Security- of privacy-eisen
+        - Technische beperkingen
+    validations:
+      required: false
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Taken
+      description: Splits de ontwikkeling op in concrete technische taken.
+      placeholder: |
+        - [ ] Analyseer de bestaande situatie
+        - [ ] Werk de technische oplossing uit
+        - [ ] Implementeer backend-wijzigingen
+        - [ ] Implementeer frontend-wijzigingen
+        - [ ] Voeg validatie en foutafhandeling toe
+        - [ ] Voeg tests toe of werk bestaande tests bij
+        - [ ] Update documentatie indien nodig
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptatiecriteria
+      description: Wanneer wordt deze functionaliteit inhoudelijk geaccepteerd?
+      placeholder: |
+        - [ ] Als gebruiker kan ik ...
+        - [ ] Wanneer ..., dan ...
+        - [ ] Het systeem toont ...
+        - [ ] Het systeem voorkomt ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: definition_of_done
+    attributes:
+      label: Definition of Done
+      description: Wanneer is deze issue volledig afgerond?
+      placeholder: |
+        - [ ] Functionaliteit werkt volgens de acceptatiecriteria
+        - [ ] Code is gereviewd
+        - [ ] Relevante tests zijn toegevoegd of aangepast
+        - [ ] Alle tests slagen
+        - [ ] Geen bekende blocking bugs
+        - [ ] Documentatie is bijgewerkt indien nodig
+        - [ ] Functionaliteit is getest op de juiste omgeving
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioriteit
+      description: Hoe belangrijk is deze functionaliteit?
+      options:
+        - Laag
+        - Medium
+        - Hoog
+        - Kritiek
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Inschatting complexiteit
+      description: Hoe complex lijkt deze functionaliteit?
+      options:
+        - Simpel
+        - Gemiddeld
+        - Complex
+        - Eerst onderzoeken
+    validations:
+      required: false
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testaanpak
+      description: Hoe moet worden gecontroleerd dat deze functionaliteit goed werkt?
+      placeholder: |
+        - Unit tests:
+        - Integratietests:
+        - Handmatige teststappen:
+        - Testomgeving:
+    validations:
+      required: false
+
+  - type: textarea
+    id: follow_up
+    attributes:
+      label: Vervolgstappen
+      description: Zijn er zaken die na deze issue nog opgepakt moeten worden?
+      placeholder: |
+        - Nieuwe issue aanmaken voor ...
+        - Monitoring toevoegen
+        - Deployment voorbereiden
+        - Feedback ophalen bij gebruikers
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Links en referenties
+      description: Voeg relevante links toe naar designs, documentatie, issues of pull requests.
+      placeholder: |
+        - Design:
+        - Documentatie:
+        - Gerelateerde issue:
+        - Pull request:
+    validations:
+      required: false
