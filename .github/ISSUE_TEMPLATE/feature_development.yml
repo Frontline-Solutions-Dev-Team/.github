@@ -1,5 +1,5 @@
 name: Nieuwe functionaliteit
-description: Gebruik deze template voor het ontwikkelen van een nieuwe feature.
+description: Gebruik deze template voor het ontwikkelen van een nieuwe functionaliteit.
 title: "[Feature]: "
 labels: ["enhancement"]
 
@@ -7,15 +7,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        Gebruik deze template om een nieuwe functionaliteit duidelijk te beschrijven.
-        Vul de issue zo in dat een developer ermee aan de slag kan zonder extra uitleg.
+        Gebruik deze template voor het beschrijven en ontwikkelen van een nieuwe functionaliteit.
 
   - type: input
     id: summary
     attributes:
       label: Korte omschrijving
       description: Beschrijf in één zin welke functionaliteit ontwikkeld moet worden.
-      placeholder: Bijvoorbeeld: Gebruikers kunnen inloggen met Microsoft Entra ID
+      placeholder: Gebruikers kunnen inloggen met Microsoft Entra ID
     validations:
       required: true
 
@@ -32,7 +31,7 @@ body:
       required: true
 
   - type: textarea
-    id: requirements
+    id: functional-requirements
     attributes:
       label: Functionele eisen
       description: Beschrijf wat de functionaliteit minimaal moet kunnen.
@@ -50,7 +49,6 @@ body:
       label: Randvoorwaarden
       description: Welke voorwaarden of afhankelijkheden zijn belangrijk?
       placeholder: |
-        Denk aan:
         - Benodigde rechten of toegang
         - Afhankelijkheden van andere issues
         - Beschikbare API's, designs of documentatie
@@ -76,7 +74,7 @@ body:
       required: true
 
   - type: textarea
-    id: acceptance_criteria
+    id: acceptance-criteria
     attributes:
       label: Acceptatiecriteria
       description: Wanneer wordt deze functionaliteit inhoudelijk geaccepteerd?
@@ -89,7 +87,7 @@ body:
       required: true
 
   - type: textarea
-    id: definition_of_done
+    id: definition-of-done
     attributes:
       label: Definition of Done
       description: Wanneer is deze issue volledig afgerond?
@@ -103,32 +101,6 @@ body:
         - [ ] Functionaliteit is getest op de juiste omgeving
     validations:
       required: true
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Prioriteit
-      description: Hoe belangrijk is deze functionaliteit?
-      options:
-        - Laag
-        - Medium
-        - Hoog
-        - Kritiek
-    validations:
-      required: true
-
-  - type: dropdown
-    id: complexity
-    attributes:
-      label: Inschatting complexiteit
-      description: Hoe complex lijkt deze functionaliteit?
-      options:
-        - Simpel
-        - Gemiddeld
-        - Complex
-        - Eerst onderzoeken
-    validations:
-      required: false
 
   - type: textarea
     id: testing
@@ -144,7 +116,7 @@ body:
       required: false
 
   - type: textarea
-    id: follow_up
+    id: follow-up
     attributes:
       label: Vervolgstappen
       description: Zijn er zaken die na deze issue nog opgepakt moeten worden?
